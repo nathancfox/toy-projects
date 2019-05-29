@@ -60,7 +60,6 @@ def simulate(x, n, sample_size):
         Column 1: Upper bound of CI
         Column 3: Float form of boolean(CI contains population parameter)
     """
-
     results = np.zeros((n, 3))
     for i in range(n):
         s = np.random.uniform(size=sample_size)
