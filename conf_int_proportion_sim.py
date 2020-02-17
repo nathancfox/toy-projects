@@ -60,6 +60,8 @@ def simulate(x, n, sample_size):
         Column 1: Upper bound of CI
         Column 3: Float form of boolean(CI contains population parameter)
     """
+    if x > 1.0 or x < 0.0:
+        raise ValueError('x must be in the closed interval [0, 1]!')
     results = np.zeros((n, 3))
     for i in range(n):
         s = np.random.uniform(size=sample_size)

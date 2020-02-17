@@ -367,6 +367,7 @@ def main(print_pat, size, pattern, frames, speed):
               4: 5
              }
     anim.save('animation.mp4', fps = speeds[speed], writer = 'ffmpeg', codec = 'libx264')
+    print('New movie file called "animation.mp4"')
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
