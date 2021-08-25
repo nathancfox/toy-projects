@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # This has to come before importing anything else from matplotlib
 import matplotlib as mpl
 mpl.use('TkAgg')
@@ -44,7 +45,7 @@ def update_canvas():
                 or ax.get_ylim()[0] == new_head_pos[1]
                 or ax.get_ylim()[1] + 1 == new_head_pos[1]):
             dir_choices.remove(new_dir)
-            new_dir = None 
+            new_dir = None
             continue
         try:
             snake.move_snake_one(new_dir)
